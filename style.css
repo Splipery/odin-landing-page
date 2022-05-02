@@ -1,10 +1,12 @@
 body {
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 
 div {
     padding: 16px;
-    border: solid rebeccapurple 1px;
+    /* the below was so I could see where the divs were*/
+    /* border: solid rebeccapurple 1px;*/
 }
 
 li {
@@ -22,6 +24,7 @@ img {
     border: solid rebeccapurple 1px;
     width: 95%;
     height: 95%;
+    background-color: gray;
 }
 
 .header {
@@ -115,7 +118,7 @@ img {
     height: 150px;
     border: solid #3882f6;
     border-radius: 8px;
-    padding: 8px;;
+    padding: 8px;
 }
 
 .caption {
@@ -124,13 +127,64 @@ img {
 }
 
 .quote {
-
+    background-color: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 32px;
 }
 
-.call {
+.quote .main {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 100;
+    color: #1f2937;
+    padding: 16px;
+}
 
+.quote .attributed {
+    font-weight: bold;
+    margin-right: 0px;
+}
+
+.callspace {
+    display: flex;
+    margin: 32px;
+    border-radius: 12px;
+    background-color: #3882f6;
+    color: #f9faf8;
+}
+
+.cleft {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cright {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cright button {
+    width: 50%;
+    height: 50%;
+    background-color: #3882f6;
+    color: #f9faf8;
+    font-size: 16px;
+    border: solid #f9faf8 2px;
+    border-radius: 8px;
 }
 
 .footer {
     height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f9faf8;
+    background-color: #1f2937;
 }
